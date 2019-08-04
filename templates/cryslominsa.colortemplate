@@ -1,0 +1,21 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+Full name:           Cryslominsa
+Short name:          cryslominsa
+Author:              Sainnhepark <sainnhe@gmail.com>
+Maintainer:          Sainnhepark <sainnhe@gmail.com>
+Website:             https://github.com/sainnhe/archived-colors/
+Description:         Archived Color Scheme
+License:             MIT && Anti-996
+Option Prefix:       dark
+Neovim:              yes
+
+Background: dark
+
+Include: _palette_cryslominsa
+
+Include: _terminal_cryslominsa
+
+Include: _basic_cryslominsa
+
+Include: _bw
