@@ -1,0 +1,29 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+Full name:           Vanilla Cake
+Short name:          vanilla_cake
+Author:              Sainnhepark <sainnhe@gmail.com>
+Maintainer:          Sainnhepark <sainnhe@gmail.com>
+Website:             https://github.com/sainnhe/vim-color-vanilla-cake/
+Description:         🍰 Light & Eye-friendly Color Scheme
+License:             MIT && Anti-996
+Option Prefix:       light
+Neovim:              yes
+
+Include: _filetypes
+
+Include: _plugins
+
+Background: light
+
+Include: _palette
+
+Include: _basic
+
+Include: _terminal
+
+Include: _filetypes_non_link
+
+Include: _plugins_non_link
+
+Include: _bw

@@ -1,0 +1,101 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256 8
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256 8
+    Normal           dark              none
+    Terminal         dark              none
+#else
+    Normal           dark              light
+    Terminal         dark              light
+#endif
+
+ColorColumn          fg                light
+Conceal              grey              none
+Cursor               none              none              reverse
+lCursor              none              none              reverse
+CursorColumn         none              lightalt
+CursorLine           none              lightalt
+CursorLineNr         dark              lightalt
+LineNr               grey              lightalt
+SignColumn           none              lightalt
+DiffAdd              none              lightgreen
+DiffChange           none              lightblue
+DiffDelete           none              lightred
+DiffText             none              light             reverse
+Directory            green             none
+EndOfBuffer          light             light
+ErrorMsg             red               none
+WarningMsg           orange            none
+ModeMsg              blue              none              bold
+MoreMsg              cyan              none              bold
+FoldColumn           grey              lightgrey
+Folded               grey              lightgrey
+IncSearch            none              lightgreen        underline
+Search               none              lightgreen        underline
+QuickFixLine         none              lightgreen
+MatchParen           none              none              bold
+NonText              grey              none
+Pmenu                dark              lightgrey
+PmenuSel             light             grey
+PmenuSbar            none              lightgrey
+PmenuThumb           none              grey
+Question             green             none
+SpellBad             red               none              s=red
+SpellCap             orange            none              s=orange
+SpellLocal           blue              none              s=blue
+SpellRare            magenta           none              s=magenta
+StatusLine           light             grey
+StatusLineNC         dark              lightgrey
+StatusLineTerm       light             grey
+StatusLineTermNC     dark              lightgrey
+TabLine              dark              lightgrey
+TabLineFill          dark              lightgrey
+TabLineSel           light             grey
+VertSplit            grey              none
+Visual               none              lightgrey
+VisualNOS            none              lightgrey         italic
+WildMenu             light             dark
+
+Todo                 magenta           none              italic
+Conditional          magenta           none
+Repeat               magenta           none
+Exception            red               none
+PreProc              red               none
+Include              red               none
+Macro                red               none
+Define               red               none
+Title                red               none
+Error                red               none
+PreCondit            orange            none
+Typedef              orange            none
+Keyword              orange            none
+StorageClass         orange            none
+Type                 yellow            none
+Structure            yellow            none
+Constant             green             none
+Function             green             none
+Identifier           lemon             none
+Delimiter            lemon             none
+Special              lemon             none
+Boolean              lemon             none
+String               cyan              none
+Character            cyan              none
+Number               cyan              none
+Float                cyan              none
+SpecialKey           blue              none
+Label                blue              none
+Tag                  blue              none
+Statement            blue              none
+Operator             blue              none
+Comment              grey              none              italic
+SpecialComment       grey              none              italic
+SpecialChar          lemon             none
+Debug                lemon             none
+Ignore               grey              none
+Underlined           none              none              underline
+CursorIM             none              fg
+ToolbarLine          none              grey
+ToolbarButton        dark              light             bold
