@@ -1,0 +1,163 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58
+
+# ":help fold-marker" to get better display of this file
+# Information {{{
+Full name:           Lost Shrine
+Short name:          lost_shrine
+Author:              Sainnhepark <sainnhe@gmail.com>
+Maintainer:          Sainnhepark <sainnhe@gmail.com>
+Website:             https://github.com/sainnhe/vim-color-lost-shrine/
+Description:         Dark, Elegant, Readable Color Scheme
+License:             MIT && Anti-996
+Option Prefix:       dark
+# }}}
+
+# Documentation {{{
+Include: _help.colortemplate
+# }}}
+
+# Common linked groups {{{
+QuickFixLine      -> Search
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+Structure         -> Type
+Boolean           -> Constant
+Define            -> PreProc
+SpecialChar       -> Special
+# Other conventional group names (see `:help group-name`)
+Debug             -> Special
+Include           -> PreProc
+Macro             -> PreProc
+Repeat            -> Statement
+# See `:help lCursor`
+lCursor           -> Cursor
+# }}}
+
+Background: dark
+
+# Color palette {{{
+# Color name         GUI               Base256           Base16 (optional)
+Color: dark          #3c4855           ~                 Black
+Color: darkgrey      #616c72           ~                 DarkGrey
+Color: grey          #a5a6a4           ~                 LightGray
+Color: light         #ebeae9           ~                 White
+Color: green         #c7ecb0           ~                 Green
+Color: blue          #bdd5ff           ~                 Blue
+Color: magenta       #e1bfff           ~                 Magenta
+Color: yellow        #ffe198           ~                 Yellow
+Color: orange        #ffc68b           ~                 DarkYellow
+Color: red           #fd8e94           ~                 Red
+Color: cyan          #b4dddd           ~                 Cyan
+Color: brown         #e5c5a8           ~                 Brown
+Color: browngrey     #999083           ~                 Brown
+Color: darkred       #4b323b           ~                 DarkRed
+Color: darkgreen     #2d3a2c           ~                 DarkGreen
+Color: darkorange    #473628           ~                 DarkYellow
+Color: darkblue      #303e56           ~                 DarkBlue
+# }}}
+
+# Terminal colors {{{
+Term colors: darkgrey red green yellow blue magenta cyan light
+Term colors: darkgrey red green yellow
+Term colors: blue magenta cyan light
+# }}}
+
+# Default highlight groups {{{
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256 8
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256 8
+    Normal           light             none
+    Terminal         light             none
+#else
+    Normal           light             dark
+    Terminal         light             dark
+#endif
+
+# Group              Foreground        Background        Attributes
+ColorColumn          fg                dark
+Conceal              grey              none
+Cursor               none              none              reverse
+CursorColumn         none              darkgrey
+CursorLine           none              darkgrey
+CursorLineNr         light             darkgrey
+LineNr               grey              darkgrey
+SignColumn           none              darkgrey
+DiffAdd              none              darkgreen 
+DiffChange           none              darkblue
+DiffDelete           none              darkred
+DiffText             none              darkorange
+Directory            green             none
+EndOfBuffer          darkgrey          none
+ErrorMsg             red               darkgrey
+WarningMsg           orange            darkgrey
+ModeMsg              dark              green              bold
+MoreMsg              dark              blue
+FoldColumn           grey              darkgrey
+Folded               grey              darkgrey
+Pmenu                light             darkgrey
+PmenuSel             dark              green
+PmenuSbar            none              darkgrey
+PmenuThumb           none              green
+Question             green             none
+SpellBad             blue              none              s=red
+SpellCap             orange            none              s=orange
+SpellLocal           green             none              s=cyan
+SpellRare            magenta           none              s=magenta
+VertSplit            grey              none
+Visual               none              darkgrey
+VisualNOS            none              darkgrey          italic
+Search               none              darkgrey          underline
+IncSearch            none              darkgrey          underline
+MatchParen           none              none              bold
+NonText              grey              none
+StatusLine           light             darkgrey
+StatusLineNC         dark              darkgrey
+TabLine              dark              darkgrey
+TabLineFill          dark              darkgrey
+TabLineSel           dark              blue
+WildMenu             dark              green
+
+Title                magenta           none
+Label                magenta           none
+Conditional          magenta           none
+Exception            magenta           none
+PreCondit            magenta           none
+Typedef              yellow            none
+PreProc              yellow            none
+Keyword              yellow            none
+Operator             yellow            none
+Delimiter            yellow            none
+Type                 green             none
+StorageClass         green             none
+Tag                  green             none
+String               green             none
+Character            green             none
+Number               green             none
+Float                green             none
+Identifier           blue              none
+Function             blue              none
+Statement            blue              none
+Constant             blue              none
+Special              blue              none
+SpecialKey           magenta           none
+Error                red               none              bold
+Comment              grey              none              italic
+SpecialComment       brown             none              italic
+Todo                 magenta           none              italic
+Ignore               grey              none
+Underlined           none              none              underline
+# See `:help CursorIM`
+CursorIM             none              fg
+# See `:help window-toolbar`
+ToolbarLine          none              grey
+ToolbarButton        dark              light             bold
+# }}}
+
+# Additional highlight groups {{{
+# }}}
+
+# B/W variant {{{
+Include: _bw.colortemplate
+# }}}
